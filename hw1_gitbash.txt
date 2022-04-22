@@ -1,0 +1,93 @@
+
+1) где я сейчас $ pwd
+
+2) создать папку $ mkdir lesson_1
+3) зайти в папку $ cd lesson_1
+
+4) создать три папки $ mkdir hw_1 hw_2 hw_3
+
+5) зайти в любую $ cd hw_1
+
+6)создать пять файлов $ touch a.txt b.txt c.txt d.json e.json
+
+7) создать три папки $ mkdir mary_5
+$ mkdir hw_4 hw_5
+
+8) список содержимого папки
+$ ls  или подробнее ls -la
+
+9)открыть любой тхт
+$ 
+vim a.txt
+
+10 ) i 
+написать
+
+11)Сохранить и выйти - Enter ctrl+c
+из vim  :wq
+
+12)на уровень выше
+$ cd ..
+
+13) переместить 2 файла
+$ mv hw_1/b.txt hw_1/c.txt hw_2
+
+14) скопировать 2 файла
+$ cp hw_2/b.txt hw_2/c.txt hw_3
+   или $ cp hw_2/{b.txt,c.txt} hw_1
+
+15) найти по имени
+$ find . -name "b.txt"
+
+16) просмотреть содержимое реальном времени, изучить команду, как работает grep
+$ tail -F a.txt | grep "never"
+
+Работа с grep, поиск строк
+
+17) вывести первые строки файла
+$ head -2 a.txt
+
+18) вывести последние строки файла
+$ tail -2 a.txt
+
+
+19) Содержание длинного файла
+
+$ less a.txt
+$ less -s a.txt - без пустых строк
+
+20) Вывести дату и время
+$ date  
+
+
+
+1.
+curl "http://162.55.220.72:5005/terminal-hw-request"
+Зніч@DESKTOP-EDDEIHM MINGW64 ~/Desktop/IT/HW
+
+$ curl  'http://162.55.220.72:5005/get_method?name="Mary"&age=36'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    18  100    18    0     0    204      0 --:--:-- --:--:-- --:--:--   206["\"Mary\"","36"]
+
+[1]+  Done                    curl http://162.55.220.72:5005/get_method?name=Mary
+
+
+
+2.Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+1) vim z1.sh
+2)#!/bin/bash
+echo "script"
+cd mary_1
+mkdir mary_2 mary_3 mary_4
+cd mary_3
+touch a.txt b.txt c.txt d.json touch e.json
+mkdir mary_5 mary_6 mary_7
+ls -la
+cd ..
+mv mary_3/{b.txt,c.txt} mary_2
+echo "done"
+3)./z1.sh
+
+
+
