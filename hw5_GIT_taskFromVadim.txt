@@ -19,13 +19,13 @@ JSON
 
  7. Добавить файл под гит.// git add new.json
 
- 8. Закоммитить файл.//  git commit -m "create new.json"
+ 8. Закоммитить файл.//  git commit -am "create new.json"
 
  9. Отправить файл на внешний GitHub репозиторий.// git push
  10. Отредактировать содержание файла “new.json” -
  написать информацию о себе (ФИО, возраст, количество домашних животных,
  будущая желаемая зарплата). Всё написать в формате JSON.
- 11. Отправить изменения на внешний репозиторий.//  git add new.json //  git commit -m "change file new.json"//  git push
+ 11. Отправить изменения на внешний репозиторий.//  git add new.json //  git commit -am "change file new.json"//  git push
 
  12. Создать файл preferences.json// vim preferences.json
 
@@ -57,7 +57,7 @@ XML
  27. Отредактировать содержание файла “new.xml” - написать информацию о себе
  (ФИО, возраст, количество домашних животных, будущая желаемая зарплата).
  Всё написать в формате XML.
- 28. Отправить изменения на внешний репозиторий.// git add new.xml //  git commit -m "change file" // git push
+ 28. Отправить изменения на внешний репозиторий.// git add new.xml //  git commit -am "change file" // git push
  29. Создать файл preferences.xml //  vim preferences.xml
 
  30. В файл preferences.xml добавить информацию о своих предпочтениях 
@@ -66,7 +66,7 @@ XML
 изучены на курсе в формате XML // vim skills.xml
 
  32. Сделать коммит в одну строку.
- 33. Отправить сразу 2 файла на внешний репозиторий.// git add . | git commit -am "chance files preferences and skills" | git push
+ 33. Отправить сразу 2 файла на внешний репозиторий.// git add . // git commit -am "change files preferences and skills" // git push
 
  34. На веб интерфейсе создать файл bug_report.xml.
  35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
@@ -96,7 +96,7 @@ TXT
  11. Создать файл sklls.txt добавить информацию о скиллах которые 
 будут изучены на курсе в формате TXT // vim skills.txt
 
- 12. Сделать коммит в одну строку.// git commit -am "chance files preferences and skills"
+ 12. Сделать коммит в одну строку.// git commit -m "chance files preferences and skills"
 
  13. Отправить сразу 2 файла на внешний репозиторий.//  git push
 
